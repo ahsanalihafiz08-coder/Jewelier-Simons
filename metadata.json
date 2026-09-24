@@ -1,0 +1,6 @@
+{
+  "name": "Juwelier Simons",
+  "description": "Discover Juwelier Simons in Oosterwolde, Netherlands. Explore elegant jewellery and timeless styles at Stationsstraat 24.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
