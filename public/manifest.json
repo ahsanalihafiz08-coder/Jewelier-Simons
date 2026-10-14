@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "description": "Discover Juwelier Simons in Oosterwolde, Netherlands. Explore elegant jewellery and timeless styles at Stationsstraat 24.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Juwelier Simons",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Juwelier Simons",
+  "start_url": "/",
+  "theme_color": "#0B291F",
+  "icons": [
+    {
+      "src": "https://jeweliersimons.netlify.app/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "juwelier-simons-app"
+}
