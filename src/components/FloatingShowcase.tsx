@@ -4,6 +4,7 @@ import { SLIDER_48_ITEMS, SliderItem } from '../data/jewelleryData';
 import { BookingModal } from './BookingModal';
 import { DetailModal } from './DetailModal';
 import { useWishlist } from '../context/WishlistContext';
+import { handleImageError } from '../utils/imageFallback';
 
 export const FloatingShowcase: React.FC = () => {
   const [activePopup, setActivePopup] = useState<SliderItem | null>(null);
@@ -50,6 +51,7 @@ export const FloatingShowcase: React.FC = () => {
                 referrerPolicy="no-referrer"
                 loading="lazy"
                 decoding="async"
+                onError={handleImageError}
               />
               
               {/* Category badge repositioned strictly to top-left corner with centered typography */}
@@ -89,6 +91,7 @@ export const FloatingShowcase: React.FC = () => {
                 referrerPolicy="no-referrer"
                 loading="lazy"
                 decoding="async"
+                onError={handleImageError}
               />
               
               {/* Category badge repositioned strictly to top-left corner with centered typography */}
@@ -131,6 +134,7 @@ export const FloatingShowcase: React.FC = () => {
                 referrerPolicy="no-referrer"
                 loading="lazy"
                 decoding="async"
+                onError={handleImageError}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30 pointer-events-none" />
 

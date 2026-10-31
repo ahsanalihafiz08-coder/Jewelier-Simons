@@ -4,6 +4,7 @@ import { EXPLORE_COLLECTION_9_ITEMS, CollectionCardItem } from '../data/jeweller
 import { BookingModal } from './BookingModal';
 import { DetailModal } from './DetailModal';
 import { useWishlist } from '../context/WishlistContext';
+import { handleImageError } from '../utils/imageFallback';
 
 interface ExploreCollectionsProps {
   onSelectCollection?: (item: CollectionCardItem) => void;
@@ -53,6 +54,7 @@ export const ExploreCollections: React.FC<ExploreCollectionsProps> = () => {
                   referrerPolicy="no-referrer"
                   loading="lazy"
                   decoding="async"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B291F]/50 via-transparent to-transparent opacity-40 group-hover:opacity-10 transition-opacity duration-300" />
                 
@@ -141,6 +143,7 @@ export const ExploreCollections: React.FC<ExploreCollectionsProps> = () => {
                 alt={activeItem.title}
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
+                onError={handleImageError}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30 pointer-events-none" />
 

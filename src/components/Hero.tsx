@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowRight, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
-import heroPoster from '../assets/images/hero_jewellery_boutique_1790208798730.jpg';
 
 export const Hero: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -21,7 +20,7 @@ export const Hero: React.FC = () => {
           muted
           loop
           playsInline
-          poster={heroPoster}
+          poster="/images/hero_jewellery_boutique_1790208798730.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center"
         >
           <source

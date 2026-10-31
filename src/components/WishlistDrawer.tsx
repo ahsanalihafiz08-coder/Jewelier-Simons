@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Heart, Trash2, Phone, ArrowRight } from 'lucide-react';
 import { ProductItem, BUSINESS_INFO } from '../data/jewelleryData';
+import { handleImageError } from '../utils/imageFallback';
 
 interface WishlistDrawerProps {
   isOpen: boolean;
@@ -83,6 +84,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
                     alt={item.title}
                     className="w-16 h-16 object-cover rounded-xl bg-[#EBE5DC] shrink-0"
                     referrerPolicy="no-referrer"
+                    onError={handleImageError}
                   />
                   <div className="flex-grow space-y-1">
                     <span className="text-[10px] uppercase tracking-wider text-[#8FA395] font-semibold">

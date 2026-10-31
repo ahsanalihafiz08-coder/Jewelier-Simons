@@ -4,6 +4,7 @@ import { Eye, Calendar, X, Heart } from 'lucide-react';
 import { BookingModal } from './BookingModal';
 import { DetailModal } from './DetailModal';
 import { useWishlist } from '../context/WishlistContext';
+import { handleImageError } from '../utils/imageFallback';
 
 interface SliderShowcaseProps {
   onSelectItem?: (item: SliderItem) => void;
@@ -68,6 +69,7 @@ export const SliderShowcase: React.FC<SliderShowcaseProps> = () => {
                     referrerPolicy="no-referrer"
                     loading="lazy"
                     decoding="async"
+                    onError={handleImageError}
                   />
                   
                   {/* Category Badge Tag: Top-Left Corner, Centered Typography Perfectly Fitting Container */}
@@ -129,6 +131,7 @@ export const SliderShowcase: React.FC<SliderShowcaseProps> = () => {
                 referrerPolicy="no-referrer"
                 loading="lazy"
                 decoding="async"
+                onError={handleImageError}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30 pointer-events-none" />
 

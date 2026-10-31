@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Heart, ChevronLeft, ChevronRight, Eye, Calendar, X } from 'lucide-react';
 import { FEATURED_PRODUCTS_36, ProductItem } from '../data/jewelleryData';
 import { BookingModal } from './BookingModal';
+import { handleImageError } from '../utils/imageFallback';
 
 interface FeaturedProductsProps {
   selectedCategory: string;
@@ -119,6 +120,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                     referrerPolicy="no-referrer"
                     loading="lazy"
                     decoding="async"
+                    onError={handleImageError}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B291F]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -255,6 +257,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                 alt={detailProduct.title}
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
+                onError={handleImageError}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30 pointer-events-none" />
 

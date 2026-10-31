@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, Calendar, Clock, Phone, CheckCircle2, User, Mail, MessageSquare } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
 import { WhatsAppLogo } from './SocialLogos';
+import { handleImageError } from '../utils/imageFallback';
 
 export interface BookingTargetItem {
   id?: string;
@@ -109,6 +110,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       src={targetItem.image}
                       alt={targetItem.title}
                       className="w-12 h-12 rounded-xl object-cover shrink-0"
+                      onError={handleImageError}
                     />
                   )}
                   <div className="overflow-hidden">
@@ -153,6 +155,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                         src={targetItem.image}
                         alt={targetItem.title}
                         className="w-12 h-12 rounded-xl object-cover shrink-0"
+                        onError={handleImageError}
                       />
                     )}
                     <div className="overflow-hidden">

@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Phone, CheckCircle2, ArrowRight, Heart } from 'lucide-react';
 import { CollectionItem, BUSINESS_INFO } from '../data/jewelleryData';
 import { useWishlist } from '../context/WishlistContext';
+import { handleImageError } from '../utils/imageFallback';
 
 interface DetailModalProps {
   item: CollectionItem | null;
@@ -51,6 +52,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, onClose }) => {
             referrerPolicy="no-referrer"
             loading="lazy"
             decoding="async"
+            onError={handleImageError}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 pointer-events-none" />
 

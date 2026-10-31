@@ -3,6 +3,7 @@ import { GALLERY_9_ITEMS, GalleryItem } from '../data/jewelleryData';
 import { Eye, Calendar, X, Heart, Sparkles } from 'lucide-react';
 import { BookingModal } from './BookingModal';
 import { DetailModal } from './DetailModal';
+import { handleImageError } from '../utils/imageFallback';
 
 interface GalleryProps {
   onOpenLightbox?: (item: GalleryItem) => void;
@@ -57,6 +58,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
                   className="w-full h-full object-cover object-center transform group-hover:scale-106 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  onError={handleImageError}
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B291F]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -125,6 +127,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
                 alt={activeModalItem.title}
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
+                onError={handleImageError}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30 pointer-events-none" />
 

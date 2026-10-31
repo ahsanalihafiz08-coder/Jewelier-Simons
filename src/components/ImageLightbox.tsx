@@ -1,6 +1,7 @@
 import React from 'react';
 import { X } from 'lucide-react';
 import { GalleryItem } from '../data/jewelleryData';
+import { handleImageError } from '../utils/imageFallback';
 
 interface ImageLightboxProps {
   item: GalleryItem | null;
@@ -36,6 +37,7 @@ export const ImageLightbox: React.FC<ImageLightboxProps> = ({ item, onClose }) =
             alt={item.title}
             className="max-h-[75vh] w-auto object-contain mx-auto"
             referrerPolicy="no-referrer"
+            onError={handleImageError}
           />
         </div>
 
