@@ -98,9 +98,9 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, onClose }) => {
           <div className="space-y-2.5">
             <div className="flex items-center justify-between text-xs text-[#8FA395]">
               <span className="uppercase tracking-[0.2em] text-[#D4AF37] font-semibold">
-                Juwelier Simons Boutique Curation
+                RichieGold&Diamonds Boutique Curation
               </span>
-              <span>Stationsstraat 24, Oosterwolde</span>
+              <span>Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates</span>
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-serif text-[#0B291F]">

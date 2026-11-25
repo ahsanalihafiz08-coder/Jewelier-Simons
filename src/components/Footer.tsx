@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Phone, MapPin, ArrowUp, Mail } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
 import { WhatsAppLogo, InstagramLogo, FacebookLogo } from './SocialLogos';
 
@@ -39,17 +39,17 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="inline-flex items-center gap-2.5 bg-transparent">
               <div className="w-8 h-8 rounded-full border border-[#D4AF37]/60 flex items-center justify-center text-[#D4AF37] bg-transparent shrink-0">
-                <span className="font-serif text-xs font-semibold tracking-tighter">JS</span>
+                <span className="font-serif text-xs font-semibold tracking-tighter">RG</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-serif tracking-[0.2em] uppercase text-[#FBFBF7]">
-                Juwelier Simons
+                RichieGold&Diamonds
               </h3>
             </div>
             <p className="text-sm font-serif italic text-[#D4AF37] max-w-sm">
               "{BUSINESS_INFO.tagline}"
             </p>
             <p className="text-xs text-[#FBFBF7]/75 font-light leading-relaxed max-w-md">
-              A refined European jewellery destination in Oosterwolde, dedicated to timeless craftsmanship, delicate aesthetic balance, and attentive in-person consultation.
+              A refined fine jewellery destination in Dubai, dedicated to timeless craftsmanship, delicate aesthetic balance, and attentive in-person consultation.
             </p>
 
             {/* Clean, Transparent Brand Icons for WhatsApp, Instagram, and Facebook */}
@@ -59,8 +59,8 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1 bg-transparent border-0 hover:scale-110 active:scale-95 transition-transform flex items-center justify-center cursor-pointer"
-                aria-label="Message Juwelier Simons on WhatsApp"
-                title="WhatsApp (+31 516 513 035)"
+                aria-label="Message RichieGold&Diamonds on WhatsApp"
+                title="WhatsApp (+971 50 109 3943)"
               >
                 <WhatsAppLogo size={24} />
               </a>
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1 bg-transparent border-0 hover:scale-110 active:scale-95 transition-transform flex items-center justify-center cursor-pointer"
-                aria-label="Follow Juwelier Simons on Instagram"
+                aria-label="Follow RichieGold&Diamonds on Instagram"
                 title="Instagram"
               >
                 <InstagramLogo size={24} />
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1 bg-transparent border-0 hover:scale-110 active:scale-95 transition-transform flex items-center justify-center cursor-pointer"
-                aria-label="Visit Juwelier Simons on Facebook"
+                aria-label="Visit RichieGold&Diamonds on Facebook"
                 title="Facebook"
               >
                 <FacebookLogo size={24} />
@@ -134,6 +134,16 @@ export const Footer: React.FC = () => {
                 </a>
               </div>
 
+              <div className="flex items-center gap-2.5">
+                <Mail className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <a
+                  href={`mailto:${BUSINESS_INFO.email}`}
+                  className="hover:text-[#D4AF37] transition-colors font-sans text-xs sm:text-sm font-medium tracking-wide"
+                >
+                  {BUSINESS_INFO.email}
+                </a>
+              </div>
+
               <div className="pt-2 text-[11px] text-[#FBFBF7]/60">
                 Customer Rating: <span className="text-[#D4AF37] font-medium">{BUSINESS_INFO.rating} ★</span> ({BUSINESS_INFO.reviewsCount} verified reviews)
               </div>
@@ -145,7 +155,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar: Copyright & Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FBFBF7]/60">
           <p>
-            © {new Date().getFullYear()} Juwelier Simons · Stationsstraat 24, Oosterwolde. All rights reserved.
+            © {new Date().getFullYear()} RichieGold&Diamonds · Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates. All rights reserved.
           </p>
 
           <button

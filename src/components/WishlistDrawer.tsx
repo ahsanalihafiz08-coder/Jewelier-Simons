@@ -115,7 +115,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
         {items.length > 0 && (
           <div className="p-5 sm:p-6 bg-[#F8F5EE] border-t border-[#D3DDD6] space-y-3">
             <p className="text-xs text-[#526359] text-center font-light">
-              Inquire about your saved pieces directly with our Oosterwolde boutique.
+              Inquire about your saved pieces directly with our Dubai boutique.
             </p>
             <div className="flex flex-col sm:flex-row gap-2">
               <a
@@ -126,7 +126,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
                 <span>Call Store</span>
               </a>
               <a
-                href={`https://wa.me/31516513035?text=Hello%20Juwelier%20Simons,%20I%20am%20interested%20in%20these%20items%20from%20my%20wishlist:%20${encodeURIComponent(items.map(i => i.title).join(', '))}`}
+                href={`https://wa.me/971501093943?text=Hello%20RichieGold%26Diamonds,%20I%20am%20interested%20in%20these%20items%20from%20my%20wishlist:%20${encodeURIComponent(items.map(i => i.title).join(', '))}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-4 bg-[#0B291F] text-[#FBFBF7] rounded-full text-xs uppercase tracking-wider font-medium border border-[#D4AF37]/40 hover:bg-[#123C2D] transition-colors"

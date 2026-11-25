@@ -67,7 +67,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
             Featured Creations & Timepieces
           </h2>
           <p className="text-sm sm:text-base text-[#4E6155] font-light leading-relaxed">
-            Browse our 36-piece signature catalog. Each creation is handcrafted from noble metals and certified stones, available at our boutique in Oosterwolde.
+            Browse our 36-piece signature catalog. Each creation is handcrafted from noble metals and certified stones, available at our boutique in Dubai.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                   <div className="space-y-1.5">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] uppercase tracking-[0.18em] text-[#8FA395] font-semibold">
-                        Juwelier Simons
+                        RichieGold&Diamonds
                       </span>
                       {/* Exact Euro Price Clearly Visible */}
                       <span className="text-base sm:text-lg font-serif font-bold text-[#0B291F] tracking-tight">
@@ -313,7 +313,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
               </div>
 
               <p className="text-xs sm:text-sm text-[#4E6155] leading-relaxed font-light text-left">
-                {detailProduct.description || "Exclusively curated creation at Juwelier Simons in Oosterwolde. Crafted with certified European standards."}
+                {detailProduct.description || "Exclusively curated creation at RichieGold&Diamonds in Dubai. Crafted with certified European standards."}
               </p>
 
               {/* Modal Action Buttons: Centered text horizontally and vertically */}

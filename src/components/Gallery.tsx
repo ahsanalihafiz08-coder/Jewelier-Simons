@@ -79,10 +79,10 @@ export const Gallery: React.FC<GalleryProps> = () => {
                 <div className="space-y-1">
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-[#D4AF37] font-semibold">
-                      Juwelier Simons
+                      RichieGold&Diamonds
                     </span>
                     <span className="text-[10px] text-[#8FA395] font-light">
-                      Oosterwolde
+                      Dubai
                     </span>
                   </div>
 
@@ -173,7 +173,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
                 {activeModalItem.title}
               </h3>
               <p className="text-xs sm:text-sm text-[#526359] font-light max-w-sm mx-auto leading-relaxed">
-                Prepared with meticulous devotion in our Oosterwolde workshop. Available for private viewing, custom engraving, and personal sizing.
+                Prepared with meticulous devotion in our Dubai workshop. Available for private viewing, custom engraving, and personal sizing.
               </p>
 
               {/* Modal Action Buttons: Perfectly Centered Horizontally & Vertically */}
@@ -242,7 +242,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
             id: detailItem.id,
             title: detailItem.title,
             category: detailItem.category,
-            description: `Fine creation exhibited in our visual archive at Juwelier Simons in Oosterwolde.`,
+            description: `Fine creation exhibited in our visual archive at RichieGold&Diamonds in Dubai.`,
             image: detailItem.image,
             details: 'Handcrafted according to European standards. Complimentary sizing, cleaning, and appraisal included.',
             highlights: ['Hallmarked Noble Metal', 'Certified Gemstone Accents', 'Complimentary Boutique Care', 'Secure Atelier Packaging'],

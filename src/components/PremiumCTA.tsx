@@ -34,7 +34,7 @@ export const PremiumCTA: React.FC = () => {
         </h2>
 
         <p className="text-xs sm:text-sm md:text-base text-[#FBFBF7]/85 max-w-xl mx-auto font-light leading-relaxed">
-          Discover something truly special. Explore the world of Juwelier Simons and find jewellery and timepieces that feel uniquely yours.
+          Discover something truly special. Explore the world of RichieGold&Diamonds and find jewellery and timepieces that feel uniquely yours.
         </p>
 
         {/* Action Buttons: Well proportioned rounded pill shapes with generous width and padding */}
@@ -62,7 +62,7 @@ export const PremiumCTA: React.FC = () => {
 
         {/* Address Callout */}
         <p className="text-[11px] text-[#FBFBF7]/60 pt-2 font-light">
-          Visit us at {BUSINESS_INFO.fullAddress} · Oosterwolde
+          Visit us at {BUSINESS_INFO.fullAddress}
         </p>
 
       </div>

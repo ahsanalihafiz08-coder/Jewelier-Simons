@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Heart, Phone, MapPin, Clock, Calendar } from 'lucide-react';
+import { Menu, X, Heart, Phone, MapPin, Clock, Calendar, Mail } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
 import { WhatsAppLogo, InstagramLogo, FacebookLogo } from './SocialLogos';
 import { BookingModal } from './BookingModal';
@@ -55,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({
     { label: 'The Gallery', href: '#gallery' },
     { label: 'Customer Reviews', href: '#reviews' },
     { label: 'Boutique Location', href: '#location-map' },
-    { label: 'Contact Juwelier Simons', href: '#contact' },
+    { label: 'Contact RichieGold&Diamonds', href: '#contact' },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -83,13 +83,13 @@ export const Header: React.FC<HeaderProps> = ({
             <a
               href="#home"
               className="inline-flex items-center gap-2 group cursor-pointer bg-transparent"
-              aria-label="Juwelier Simons Home"
+              aria-label="RichieGold&Diamonds Home"
             >
-              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-[#D4AF37]/70 flex items-center justify-center text-[#D4AF37] bg-transparent group-hover:border-[#D4AF37] transition-colors shrink-0">
-                <span className="font-serif text-[11px] sm:text-xs font-semibold tracking-tighter">JS</span>
+              <div className="w-8 h-8 rounded-full border border-[#D4AF37]/70 flex items-center justify-center text-[#D4AF37] bg-transparent group-hover:border-[#D4AF37] transition-colors shrink-0">
+                <span className="font-serif text-xs font-semibold tracking-tighter">RG</span>
               </div>
-              <span className="text-xs sm:text-base lg:text-lg font-serif tracking-[0.16em] sm:tracking-[0.22em] text-[#FBFBF7] uppercase group-hover:text-[#D4AF37] transition-colors shrink-0 font-medium text-left drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
-                Juwelier Simons
+              <span className="text-sm sm:text-base lg:text-lg font-serif tracking-[0.08em] sm:tracking-[0.22em] text-[#FBFBF7] uppercase group-hover:text-[#D4AF37] transition-colors shrink-0 font-medium text-left drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
+                RichieGold&Diamonds
               </span>
             </a>
 
@@ -119,7 +119,7 @@ export const Header: React.FC<HeaderProps> = ({
               <a
                 href={`tel:${BUSINESS_INFO.phoneRaw}`}
                 className="p-1.5 sm:p-2 text-[#FBFBF7] hover:text-[#D4AF37] transition-colors group"
-                aria-label={`Call Juwelier Simons at ${BUSINESS_INFO.phone}`}
+                aria-label={`Call RichieGold&Diamonds at ${BUSINESS_INFO.phone}`}
                 title={`Call ${BUSINESS_INFO.phone}`}
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:scale-110 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]" />
@@ -158,10 +158,10 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center justify-between pb-6 border-b border-[#1A4D3B]/80 shrink-0">
               <div>
                 <span className="text-xl sm:text-2xl font-serif tracking-[0.25em] uppercase text-[#FBFBF7]">
-                  Juwelier Simons
+                  RichieGold&Diamonds
                 </span>
                 <p className="text-xs text-[#8FA395] font-light mt-0.5">
-                  Stationsstraat 24, 8431 ET Oosterwolde
+                  Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates
                 </p>
               </div>
 
@@ -208,7 +208,7 @@ export const Header: React.FC<HeaderProps> = ({
                     <MapPin className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
                     <div>
                       <strong className="block text-[#FBFBF7] font-medium">Boutique Showroom</strong>
-                      <span>Stationsstraat 24<br />8431 EV Oosterwolde, Netherlands</span>
+                      <span>Old Baladiya Street 3a, Sector<br />Dubai, United Arab Emirates</span>
                     </div>
                   </div>
 
@@ -218,6 +218,16 @@ export const Header: React.FC<HeaderProps> = ({
                       <strong className="block text-[#FBFBF7] font-medium">Direct Telephone</strong>
                       <a href={`tel:${BUSINESS_INFO.phoneRaw}`} className="hover:text-[#D4AF37] transition-colors">
                         {BUSINESS_INFO.phone}
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2.5">
+                    <Mail className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
+                    <div>
+                      <strong className="block text-[#FBFBF7] font-medium">Direct Email</strong>
+                      <a href={`mailto:${BUSINESS_INFO.email}`} className="hover:text-[#D4AF37] transition-colors">
+                        {BUSINESS_INFO.email}
                       </a>
                     </div>
                   </div>

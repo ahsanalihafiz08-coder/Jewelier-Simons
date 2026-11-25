@@ -8,7 +8,7 @@ export const ActionWidgets: React.FC = () => {
   const [chatMessages, setChatMessages] = useState<Array<{ sender: 'bot' | 'user'; text: string; time: string }>>([
     {
       sender: 'bot',
-      text: `Welkom bij Juwelier Simons! I am your boutique concierge. How may I assist you with our fine jewellery collections, custom engagement rings, or visiting our boutique at Stationsstraat 24 in Oosterwolde?`,
+      text: `Welcome to RichieGold&Diamonds! I am your boutique concierge. How may I assist you with our fine jewellery collections, custom engagement rings, or visiting our boutique at Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates?`,
       time: 'Just now',
     },
   ]);
@@ -42,7 +42,7 @@ export const ActionWidgets: React.FC = () => {
       q.includes('route') ||
       q.includes('park')
     ) {
-      return `Juwelier Simons is situated in the historic heart of Oosterwolde at ${BUSINESS_INFO.fullAddress} (${BUSINESS_INFO.address}, ${BUSINESS_INFO.postalCode} ${BUSINESS_INFO.city}). We have convenient public parking located just steps away from our boutique entrance.`;
+      return `RichieGold&Diamonds is situated in Dubai at ${BUSINESS_INFO.fullAddress}. We have convenient public parking located just steps away from our boutique entrance.`;
     }
 
     // 2. Business Hours / Opening Times
@@ -56,7 +56,7 @@ export const ActionWidgets: React.FC = () => {
       q.includes('gesloten') ||
       q.includes('schedule')
     ) {
-      return `Our boutique opening hours at Stationsstraat 24, Oosterwolde are:\n• Tuesday – Friday: 09:30 – 18:00\n• Saturday: 09:30 – 17:00\n• Monday & Sunday: Closed.\nWe welcome walk-ins during open hours, or you can reserve a private consultation.`;
+      return `Our boutique opening hours at Old Baladiya Street 3a, Sector, Dubai are:\n• Tuesday – Friday: 09:30 – 18:00\n• Saturday: 09:30 – 17:00\n• Monday & Sunday: Closed.\nWe welcome walk-ins during open hours, or you can reserve a private consultation.`;
     }
 
     // 3. Boutique Services / Repairs / Goldsmithing / Custom Commissions
@@ -73,7 +73,7 @@ export const ActionWidgets: React.FC = () => {
       q.includes('resiz') ||
       q.includes('engrav')
     ) {
-      return `At Juwelier Simons, our master craftsmen provide comprehensive boutique services including:\n• In-house goldsmithing & custom jewelry commissions\n• Professional watch repairs, battery replacements & waterproof testing\n• Ring resizing, gemstone setting & heirloom restoration\n• Ultrasonic cleaning, inspection & personalized engraving.`;
+      return `At RichieGold&Diamonds, our master craftsmen provide comprehensive boutique services including:\n• In-house goldsmithing & custom jewelry commissions\n• Professional watch repairs, battery replacements & waterproof testing\n• Ring resizing, gemstone setting & heirloom restoration\n• Ultrasonic cleaning, inspection & personalized engraving.`;
     }
 
     // 4. Appointment Bookings & Consultations
@@ -99,7 +99,7 @@ export const ActionWidgets: React.FC = () => {
       q.includes('gold') ||
       q.includes('goud')
     ) {
-      return `Our curated bridal and high-jewellery collections feature certified diamonds, solitaire engagement rings, handcrafted wedding bands, and 14k/18k gold creations in yellow, white, and rose gold. We invite you to visit our showcase in Oosterwolde to experience them in person.`;
+      return `Our curated bridal and high-jewellery collections feature certified diamonds, solitaire engagement rings, handcrafted wedding bands, and 14k/18k gold creations in yellow, white, and rose gold. We invite you to visit our showcase in Dubai to experience them in person.`;
     }
 
     // 6. Contact & Direct Communication
@@ -111,11 +111,11 @@ export const ActionWidgets: React.FC = () => {
       q.includes('call') ||
       q.includes('email')
     ) {
-      return `You can connect with Juwelier Simons directly by phone at ${BUSINESS_INFO.phone}, chat via WhatsApp at +31 516 513 035, or visit us at Stationsstraat 24, Oosterwolde. We are always glad to assist you.`;
+      return `You can connect with RichieGold&Diamonds directly by phone at ${BUSINESS_INFO.phone}, email at ${BUSINESS_INFO.email}, chat via WhatsApp at +971 50 109 3943, or visit us at Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates. We are always glad to assist you.`;
     }
 
     // Default Courteous Concierge Response
-    return `Thank you for your inquiry with Juwelier Simons. Our experienced team in Oosterwolde is ready to assist you with fine jewellery selections, watch service, custom goldsmithing, or private appointments. Please feel free to call us at ${BUSINESS_INFO.phone} or send a message on WhatsApp.`;
+    return `Thank you for your inquiry with RichieGold&Diamonds. Our experienced team in Dubai is ready to assist you with fine jewellery selections, watch service, custom goldsmithing, or private appointments. Please feel free to call us at ${BUSINESS_INFO.phone} or send a message on WhatsApp.`;
   };
 
   const handleSend = (textToSend?: string) => {
@@ -142,8 +142,8 @@ export const ActionWidgets: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-full bg-[#25D366] text-white shadow-xl hover:shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center justify-center cursor-pointer group"
-          aria-label="Chat with Juwelier Simons on WhatsApp"
-          title="WhatsApp (+31 516 513 035)"
+          aria-label="Chat with RichieGold&Diamonds on WhatsApp"
+          title="WhatsApp (+971 50 109 3943)"
         >
           <WhatsAppLogo size={24} />
         </a>
@@ -152,7 +152,7 @@ export const ActionWidgets: React.FC = () => {
         <a
           href={`tel:${BUSINESS_INFO.phoneRaw}`}
           className="w-12 h-12 rounded-full bg-[#D4AF37] text-[#0B291F] shadow-xl hover:shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center justify-center cursor-pointer group"
-          aria-label={`Call Juwelier Simons at ${BUSINESS_INFO.phone}`}
+          aria-label={`Call RichieGold&Diamonds at ${BUSINESS_INFO.phone}`}
           title={`Call ${BUSINESS_INFO.phone}`}
         >
           <Phone className="w-5 h-5 fill-[#0B291F]" />
@@ -166,7 +166,7 @@ export const ActionWidgets: React.FC = () => {
             chatOpen ? 'bg-[#123C2D] border-[#D4AF37]' : ''
           }`}
           aria-label={chatOpen ? 'Close AI Concierge' : 'Open AI Concierge'}
-          title="Simons AI Boutique Concierge"
+          title="RichieGold&Diamonds AI Boutique Concierge"
         >
           <Bot className="w-5 h-5 text-[#D4AF37]" />
           <span className="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-[#25D366] border-2 border-[#0B291F]" />
@@ -187,7 +187,7 @@ export const ActionWidgets: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-xs font-serif tracking-wider uppercase text-[#FBFBF7] font-medium">
-                  Simons AI Concierge
+                  RichieGold&Diamonds AI Concierge
                 </h4>
                 <div className="flex items-center gap-1.5 text-[10px] text-[#D4AF37]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]" />
@@ -223,7 +223,7 @@ export const ActionWidgets: React.FC = () => {
                   {msg.sender === 'bot' && (
                     <div className="flex items-center gap-1 text-[10px] text-[#0B291F] font-semibold mb-1">
                       <Sparkles className="w-3 h-3 text-[#D4AF37]" />
-                      <span>Juwelier Simons Assistant</span>
+                      <span>RichieGold&Diamonds Assistant</span>
                     </div>
                   )}
                   <p className="font-light">{msg.text}</p>

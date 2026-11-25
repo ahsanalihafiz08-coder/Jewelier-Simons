@@ -88,7 +88,7 @@ export default function App() {
         {/* 6. 48-Piece "Atelier Highlights in Motion" Section */}
         <FloatingShowcase />
 
-        {/* 7. Why Choose Juwelier Simons (Boutique Values & Pillars) */}
+        {/* 7. Why Choose RichieGold&Diamonds (Boutique Values & Pillars) */}
         <WhyChooseUs />
 
         {/* 8. The Gallery Section (Reduced vertical height & padding) */}
@@ -136,7 +136,7 @@ export default function App() {
             category: selectedCollection.category,
             description: selectedCollection.description,
             image: selectedCollection.image,
-            details: 'Masterfully curated at Juwelier Simons. Handcrafted according to traditional European goldsmithing methods.',
+            details: 'Masterfully curated at RichieGold&Diamonds. Handcrafted according to traditional European goldsmithing methods.',
             highlights: ['Certified European Hallmarking', 'Noble Gold Alloys', 'In-Store Care & Cleaning', 'Heritage Quality'],
           }}
           onClose={() => setSelectedCollection(null)}

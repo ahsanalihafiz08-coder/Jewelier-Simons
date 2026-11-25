@@ -40,23 +40,24 @@ export interface GalleryItem {
 }
 
 export const BUSINESS_INFO = {
-  name: "Juwelier Simons",
+  name: "RichieGold&Diamonds",
   tagline: "Timeless jewellery for meaningful moments.",
-  phone: "+31 516 513 035",
-  phoneRaw: "+31516513035",
-  address: "Stationsstraat 24",
-  postalCode: "8431 EV",
-  city: "Oosterwolde",
-  country: "Netherlands",
-  fullAddress: "Stationsstraat 24, 8431 EV Oosterwolde, Netherlands",
+  phone: "+971 50 109 3943",
+  phoneRaw: "+971501093943",
+  email: "edwin@richie.ae",
+  address: "Old Baladiya Street 3a, Sector",
+  postalCode: "",
+  city: "Dubai",
+  country: "United Arab Emirates",
+  fullAddress: "Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates",
   rating: "4.7",
   reviewsCount: "87",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Juwelier+Simons+Stationsstraat+24+8431+EV+Oosterwolde+Netherlands",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2402.775878489814!2d6.29524317711462!3d52.99342790148783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8172ce3a4e9b9%3A0xe9f7c0a9693be7bf!2sStationsstraat%2024%2C%208431%20EV%20Oosterwolde!5e0!3m2!1sen!2snl!4v1700000000000!5m2!1sen!2snl",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Old+Baladiya+Street+3a+Sector+Dubai+United+Arab+Emirates",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Old%20Baladiya%20Street%203a%2C%20Sector%2C%20Dubai%2C%20United%20Arab%20Emirates&t=&z=16&ie=UTF8&iwloc=&output=embed",
   socials: {
-    instagram: "https://www.instagram.com/juweliersimons?stkn=MThueHFyNHQwZ3UxYQ==",
-    facebook: "https://www.facebook.com/juweliersimons",
-    whatsapp: "https://wa.me/31516513035"
+    instagram: "https://www.instagram.com/richiegolddiamonds?jplx=MXIxa3dweWVneTIzYw==",
+    facebook: "https://www.facebook.com/profile.php?id=61572747314354",
+    whatsapp: "https://wa.me/971501093943"
   }
 };
 

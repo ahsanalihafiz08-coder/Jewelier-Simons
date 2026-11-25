@@ -39,7 +39,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const refCode = `JS-${Math.floor(100000 + Math.random() * 900000)}`;
+    const refCode = `RG-${Math.floor(100000 + Math.random() * 900000)}`;
     setBookingRef(refCode);
     setIsSubmitted(true);
   };
@@ -99,7 +99,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   Thank You, {formData.name || 'Valued Client'}
                 </h4>
                 <p className="text-xs sm:text-sm text-[#526359] max-w-md mx-auto leading-relaxed">
-                  Your appointment request for <strong>{formData.date || 'upcoming date'}</strong> ({formData.timeSlot}) has been registered at Juwelier Simons. Reference: <strong>{bookingRef}</strong>.
+                  Your appointment request for <strong>{formData.date || 'upcoming date'}</strong> ({formData.timeSlot}) has been registered at RichieGold&Diamonds. Reference: <strong>{bookingRef}</strong>.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
-                  href={`https://wa.me/31516513035?text=Hello%20Juwelier%20Simons,%20I%20have%20submitted%20booking%20request%20${bookingRef}%20for%20${encodeURIComponent(targetItem?.title || 'private viewing')}`}
+                  href={`https://wa.me/971501093943?text=Hello%20RichieGold%26Diamonds,%20I%20have%20submitted%20booking%20request%20${bookingRef}%20for%20${encodeURIComponent(targetItem?.title || 'private viewing')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#25D366] text-white rounded-full text-xs uppercase tracking-wider font-semibold hover:bg-[#20ba59] transition-colors shadow"
@@ -218,7 +218,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="e.g. +31 6 12345678"
+                    placeholder="e.g. +971 50 123 4567"
                     className="w-full px-3.5 py-2.5 text-xs bg-[#F4EFE6] border border-[#D3DDD6] rounded-xl focus:outline-none focus:border-[#0B291F] text-[#172B22]"
                   />
                 </div>

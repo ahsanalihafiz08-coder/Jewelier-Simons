@@ -59,8 +59,8 @@ export const ExploreCollections: React.FC<ExploreCollectionsProps> = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B291F]/50 via-transparent to-transparent opacity-40 group-hover:opacity-10 transition-opacity duration-300" />
                 
                 {/* Floating Category Tag */}
-                <div className="absolute top-4 left-4 bg-[#0B291F]/90 backdrop-blur-sm px-3.5 py-1 rounded-full text-[#D4AF37] border border-[#D4AF37]/30">
-                  <span className="text-[10px] uppercase tracking-[0.16em] font-medium">
+                <div className="absolute top-4 left-4 inline-flex items-center justify-center max-w-[calc(100%-4.75rem)] sm:max-w-none sm:block bg-[#0B291F]/90 backdrop-blur-sm px-3 py-1.5 sm:px-3.5 sm:py-1 rounded-full text-[#D4AF37] border border-[#D4AF37]/30">
+                  <span className="text-[10px] uppercase tracking-[0.1em] sm:tracking-[0.16em] font-medium leading-none sm:leading-normal text-center truncate sm:overflow-visible">
                     {item.category}
                   </span>
                 </div>
@@ -116,7 +116,7 @@ export const ExploreCollections: React.FC<ExploreCollectionsProps> = () => {
                     <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
                   </span>
                   <span className="text-[11px] text-[#8FA395] font-light">
-                    Oosterwolde
+                    Dubai
                   </span>
                 </div>
               </div>
@@ -186,8 +186,8 @@ export const ExploreCollections: React.FC<ExploreCollectionsProps> = () => {
               </button>
 
               {/* Category Pill Floating on Banner */}
-              <div className="absolute bottom-3 left-4">
-                <span className="text-[10px] uppercase tracking-wider text-[#0B291F] font-semibold bg-[#D4AF37] px-3 py-1 rounded-full shadow">
+              <div className="absolute bottom-3 left-4 max-w-[calc(100%-2rem)] sm:max-w-none">
+                <span className="inline-flex items-center justify-center sm:inline text-[10px] uppercase tracking-[0.08em] sm:tracking-wider text-[#0B291F] font-semibold bg-[#D4AF37] px-3 py-1.5 sm:py-1 rounded-full shadow leading-none sm:leading-normal text-center">
                   {activeItem.category}
                 </span>
               </div>
@@ -279,7 +279,7 @@ export const ExploreCollections: React.FC<ExploreCollectionsProps> = () => {
             category: detailTarget.category,
             description: detailTarget.description,
             image: detailTarget.image,
-            details: 'Curated suite available exclusively at Juwelier Simons. Prepared with meticulous reverence for your milestone.',
+            details: 'Curated suite available exclusively at RichieGold&Diamonds. Prepared with meticulous reverence for your milestone.',
             highlights: ['Noble Metal Settings', 'Certified European Standards', 'Complimentary Sizing & Care', 'Authenticity Certificate'],
           }}
           onClose={() => setDetailTarget(null)}

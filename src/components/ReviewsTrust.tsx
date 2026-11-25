@@ -19,7 +19,7 @@ const REAL_GOOGLE_REVIEWS: CustomerReview[] = [
     date: 'Verified Google Review',
     highlight: 'Vakmanschap & Vriendelijke Service',
     reviewText:
-      'Altijd vriendelijk en deskundig geholpen bij Juwelier Simons. Mijn horloge perfect gerepareerd en een prachtige gouden ring gekocht voor onze trouwdag. Echt vakmanschap in Oosterwolde!',
+      'Altijd vriendelijk en deskundig geholpen bij RichieGold&Diamonds. Mijn horloge perfect gerepareerd en een prachtige gouden ring gekocht voor onze trouwdag. Echt vakmanschap in Dubai!',
   },
   {
     id: 'rev-2',
@@ -46,7 +46,7 @@ const REAL_GOOGLE_REVIEWS: CustomerReview[] = [
     date: 'Verified Google Review',
     highlight: 'Vakkundige Horloge Service',
     reviewText:
-      'Al jaren onze vaste juwelier in Oosterwolde. Vakkundige batterijwissels, polijsten van horloges en aankoop van geboortesieraden. Altijd met een warm welkom en een glimlach.',
+      'Al jaren onze vaste juwelier in Dubai. Vakkundige batterijwissels, polijsten van horloges en aankoop van geboortesieraden. Altijd met een warm welkom en een glimlach.',
   },
   {
     id: 'rev-5',
@@ -64,7 +64,7 @@ const REAL_GOOGLE_REVIEWS: CustomerReview[] = [
     date: 'Verified Google Review',
     highlight: 'Betrouwbare Lokale Juwelier',
     reviewText:
-      'Zeer betrouwbare vakmensen. Oog voor detail en uitstekende nazorg voor onze tijdloze stukken. Een vertrouwde parel in de Stationsstraat van Oosterwolde.',
+      'Zeer betrouwbare vakmensen. Oog voor detail en uitstekende nazorg voor onze tijdloze stukken. Een vertrouwde parel in Dubai.',
   },
 ];
 
@@ -114,7 +114,7 @@ export const ReviewsTrust: React.FC = () => {
             Customer Reviews
           </h2>
           <p className="text-xs sm:text-sm text-[#4E6155] font-light leading-relaxed">
-            Authentic experiences shared by visitors to our boutique at Stationsstraat 24, Oosterwolde.
+            Authentic experiences shared by visitors to our boutique at Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates.
           </p>
 
           {/* Google Scorecard Banner */}
@@ -180,7 +180,7 @@ export const ReviewsTrust: React.FC = () => {
                   </div>
 
                   <span className="text-[10px] uppercase tracking-wider text-[#8FA395] font-light shrink-0">
-                    Oosterwolde
+                    Dubai
                   </span>
                 </div>
               </div>
@@ -238,7 +238,7 @@ export const ReviewsTrust: React.FC = () => {
           </div>
           <div className="flex items-center justify-center gap-2 text-xs text-[#526359]">
             <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
-            <span>Stationsstraat 24, 8431 EV Oosterwolde</span>
+            <span>Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates</span>
           </div>
         </div>
 

@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
         {/* Background Title - Positioned strictly behind without overlapping overlay text or CTA buttons */}
         <div className="absolute inset-x-0 top-8 sm:top-12 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
           <span className="text-[12vw] sm:text-[9vw] font-serif uppercase tracking-[0.22em] text-[#D4AF37]/[0.08] whitespace-nowrap leading-none font-normal">
-            JUWELIER SIMONS
+            RichieGold&Diamonds
           </span>
         </div>
 
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
 
           {/* Supporting Text with comfortable line-height and max-width */}
           <p className="text-sm sm:text-base md:text-lg text-[#FBFBF7]/95 max-w-xl mx-auto font-light leading-relaxed sm:leading-loose drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)]">
-            Discover refined jewellery and timeless creations designed to make every meaningful moment shine at Juwelier Simons.
+            Discover refined jewellery and timeless creations designed to make every meaningful moment shine at RichieGold&Diamonds.
           </p>
 
           {/* CTAs: Repositioned lower with comfortable padding and slightly larger on mobile */}
@@ -75,10 +75,10 @@ export const Hero: React.FC = () => {
             <button
               type="button"
               onClick={() => scrollTo('#contact')}
-              className="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2.5 px-7 py-3.5 sm:px-6 sm:py-3 text-xs uppercase tracking-[0.15em] font-medium text-[#FBFBF7] bg-[#0B291F]/70 border border-[#D4AF37]/50 hover:border-[#D4AF37] hover:bg-[#0B291F]/90 transition-all duration-200 rounded-full cursor-pointer backdrop-blur-md shadow-md min-h-[46px]"
+              className="w-full sm:w-auto inline-flex items-center justify-center text-center gap-2 sm:gap-2.5 px-4 py-3.5 sm:px-6 sm:py-3 text-[10.5px] sm:text-xs uppercase tracking-[0.06em] sm:tracking-[0.15em] font-medium text-[#FBFBF7] bg-[#0B291F]/70 border border-[#D4AF37]/50 hover:border-[#D4AF37] hover:bg-[#0B291F]/90 transition-all duration-200 rounded-full cursor-pointer backdrop-blur-md shadow-md min-h-[46px]"
             >
-              <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>Contact Juwelier Simons</span>
+              <Phone className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+              <span className="whitespace-nowrap">Contact RichieGold&Diamonds</span>
             </button>
           </div>
 
@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
             <span className="text-[#D4AF37]/60">·</span>
             <span>{BUSINESS_INFO.reviewsCount} Boutique Reviews</span>
             <span className="text-[#D4AF37]/60">·</span>
-            <span>Stationsstraat 24, Oosterwolde</span>
+            <span>Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates</span>
           </div>
         </div>
 

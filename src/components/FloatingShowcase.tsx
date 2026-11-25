@@ -189,13 +189,13 @@ export const FloatingShowcase: React.FC = () => {
                 {activePopup.title}
               </h3>
               <p className="text-xs sm:text-sm text-[#526359] font-light leading-relaxed max-w-md mx-auto">
-                Part of our 48-piece curated showcase at Juwelier Simons. Available for private viewing and boutique consultation in Oosterwolde.
+                Part of our 48-piece curated showcase at RichieGold&Diamonds. Available for private viewing and boutique consultation in Dubai.
               </p>
 
               {/* ONLY 3 Bottom Buttons: 'WhatsApp', 'Booking View', 'View Details' - Vertically and horizontally centered */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-4 border-t border-[#E5DDD0]">
                 <a
-                  href={`https://wa.me/31516513035?text=Hello%20Juwelier%20Simons,%20I%20am%20interested%20in%20${encodeURIComponent(
+                  href={`https://wa.me/971501093943?text=Hello%20RichieGold%26Diamonds,%20I%20am%20interested%20in%20${encodeURIComponent(
                     activePopup.title
                   )}`}
                   target="_blank"
@@ -259,7 +259,7 @@ export const FloatingShowcase: React.FC = () => {
             category: detailTarget.category,
             description: `Curated showcase piece from our lustrous motion collection.`,
             image: detailTarget.image,
-            details: 'Handcrafted in Europe using certified precious metals. Available for boutique fitting in Oosterwolde.',
+            details: 'Handcrafted in Europe using certified precious metals. Available for boutique fitting in Dubai.',
             highlights: ['Certified European Quality', 'Noble Metal Finishing', 'Complimentary Sizing & Polish', 'Boutique Guarantee'],
           }}
           onClose={() => setDetailTarget(null)}

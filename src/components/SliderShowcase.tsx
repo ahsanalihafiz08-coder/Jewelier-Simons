@@ -23,7 +23,7 @@ export const SliderShowcase: React.FC<SliderShowcaseProps> = () => {
   const getArchiveDescription = (item: SliderItem) => {
     if (item.category === 'Bracelets') return 'Hand-finished solid gold contour with certified master hallmarking.';
     if (item.category === 'Earrings') return 'Articulated European drop design with brilliant light reflection.';
-    if (item.category === 'Rings') return 'Precision-set noble metal band with signature Simons polish.';
+    if (item.category === 'Rings') return 'Precision-set noble metal band with signature RichieGold&Diamonds polish.';
     if (item.category === 'Parures' || item.category === 'Sets') return 'Curated matching bridal parure in harmonized goldwork.';
     return 'Exquisite European boutique archive piece crafted to heritage standards.';
   };
@@ -189,7 +189,7 @@ export const SliderShowcase: React.FC<SliderShowcaseProps> = () => {
                 {activeItem.title}
               </h3>
               <p className="text-xs sm:text-sm text-[#526359] font-light leading-relaxed max-w-md mx-auto">
-                {getArchiveDescription(activeItem)} Available for bespoke viewing and private sizing at our Oosterwolde boutique.
+                {getArchiveDescription(activeItem)} Available for bespoke viewing and private sizing at our Dubai boutique.
               </p>
 
               {/* Bottom Action Buttons: Centered text horizontally and vertically */}
@@ -245,7 +245,7 @@ export const SliderShowcase: React.FC<SliderShowcaseProps> = () => {
             id: detailTarget.id,
             title: detailTarget.title,
             category: detailTarget.category,
-            description: `Exhibited piece from the 22-Piece Atelier Archive at Juwelier Simons.`,
+            description: `Exhibited piece from the 22-Piece Atelier Archive at RichieGold&Diamonds.`,
             image: detailTarget.image,
             details: 'Masterfully forged and finished to exacting standards. Includes warranty and complimentary boutique maintenance.',
             highlights: ['Noble Gold or Platinum', 'Certified Gemstones', 'Master Atelier Inspection', 'Complimentary Ring Sizing'],

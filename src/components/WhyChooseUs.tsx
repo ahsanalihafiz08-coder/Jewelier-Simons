@@ -16,7 +16,7 @@ export const WhyChooseUs: React.FC = () => {
     {
       icon: UserCheck,
       title: "Personal Attention",
-      description: "Warm, unhurried guidance in our Oosterwolde boutique, dedicated to understanding your distinct vision and wishes."
+      description: "Warm, unhurried guidance in our Dubai boutique, dedicated to understanding your distinct vision and wishes."
     },
     {
       icon: Gift,
@@ -43,7 +43,7 @@ export const WhyChooseUs: React.FC = () => {
             <span className="w-8 h-[1px] bg-[#D4AF37]" />
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#FBFBF7] tracking-tight">
-            Why Choose Juwelier Simons
+            Why Choose RichieGold&Diamonds
           </h2>
           <p className="text-sm sm:text-base text-[#FBFBF7]/80 font-light leading-relaxed">
             Our values are anchored in discretion, aesthetic integrity, and genuine personal devotion to every guest who walks through our doors.
@@ -78,7 +78,7 @@ export const WhyChooseUs: React.FC = () => {
 
                 <div className="mt-6 pt-4 border-t border-[#1C5440]/60 flex items-center justify-between">
                   <span className="w-5 h-[1px] bg-[#D4AF37]/40 group-hover:w-8 group-hover:bg-[#D4AF37] transition-all duration-300" />
-                  <span className="text-[11px] text-[#FBFBF7]/40 font-light">Juwelier Simons</span>
+                  <span className="text-[11px] text-[#FBFBF7]/40 font-light">RichieGold&Diamonds</span>
                 </div>
               </div>
             );

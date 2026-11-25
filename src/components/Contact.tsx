@@ -40,10 +40,10 @@ export const Contact: React.FC = () => {
             <span className="w-8 h-[1px] bg-[#D4AF37]" />
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif text-[#0B291F] tracking-tight">
-            Visit Juwelier Simons
+            Visit RichieGold&Diamonds
           </h2>
           <p className="text-xs sm:text-base text-[#4C5E53] font-light leading-relaxed">
-            We welcome your inquiries, bespoke requests, or in-person visit to our showroom at Stationsstraat 24 in Oosterwolde.
+            We welcome your inquiries, bespoke requests, or in-person visit to our showroom at Old Baladiya Street 3a, Sector, Dubai, United Arab Emirates.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
               </div>
               <div className="min-w-0">
                 <h4 className="text-xs sm:text-sm font-serif uppercase tracking-wider text-[#FBFBF7] truncate">
-                  Juwelier Simons · Oosterwolde
+                  RichieGold&Diamonds · Dubai
                 </h4>
                 <p className="text-[11px] text-[#D4AF37] truncate">
                   {BUSINESS_INFO.fullAddress}
@@ -88,8 +88,8 @@ export const Contact: React.FC = () => {
           {/* Clean Google Maps iframe fitting without extra scroll gaps */}
           <div className="w-full h-44 sm:h-56 relative bg-[#EBE5DC] overflow-hidden">
             <iframe
-              title="Juwelier Simons Location Map"
-              src="https://maps.google.com/maps?q=Stationsstraat%2024%2C%208431%20EV%20Oosterwolde%2C%20Netherlands&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="RichieGold&Diamonds Location Map"
+              src="https://maps.google.com/maps?q=Old%20Baladiya%20Street%203a%2C%20Sector%2C%20Dubai%2C%20United%20Arab%20Emirates&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -115,7 +115,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="space-y-1">
                   <span className="text-[10px] uppercase tracking-[0.18em] text-[#8FA395] font-semibold">
-                    Telephone Assistance
+                    Telephone & Email Assistance
                   </span>
                   <p className="text-sm sm:text-base font-sans font-semibold text-[#0B291F]">
                     <a
@@ -123,6 +123,14 @@ export const Contact: React.FC = () => {
                       className="hover:underline transition-colors"
                     >
                       {BUSINESS_INFO.phone}
+                    </a>
+                  </p>
+                  <p className="text-xs sm:text-sm font-sans font-medium text-[#0B291F]">
+                    <a
+                      href={`mailto:${BUSINESS_INFO.email}`}
+                      className="hover:underline transition-colors"
+                    >
+                      {BUSINESS_INFO.email}
                     </a>
                   </p>
                   <p className="text-xs text-[#526359] font-light leading-relaxed">
@@ -145,10 +153,10 @@ export const Contact: React.FC = () => {
                   <p className="text-sm font-sans font-medium text-[#0B291F] leading-snug">
                     {BUSINESS_INFO.name}<br />
                     {BUSINESS_INFO.address}<br />
-                    {BUSINESS_INFO.postalCode} {BUSINESS_INFO.city}, {BUSINESS_INFO.country}
+                    {BUSINESS_INFO.city}, {BUSINESS_INFO.country}
                   </p>
                   <p className="text-xs text-[#526359] font-light leading-relaxed">
-                    Convenient boutique parking available nearby in central Oosterwolde.
+                    Convenient boutique parking available nearby in Dubai.
                   </p>
                 </div>
               </div>
@@ -161,7 +169,7 @@ export const Contact: React.FC = () => {
                   Official Channels
                 </span>
                 <h4 className="text-sm font-serif text-[#FBFBF7]">
-                  Connect With Juwelier Simons
+                  Connect With RichieGold&Diamonds
                 </h4>
               </div>
 
@@ -172,8 +180,8 @@ export const Contact: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-full bg-[#25D366] text-white hover:bg-[#20ba59] active:scale-95 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-xs font-semibold uppercase tracking-wider group cursor-pointer"
-                  aria-label="Contact Juwelier Simons on WhatsApp"
-                  title="WhatsApp (+31 516 513 035)"
+                  aria-label="Contact RichieGold&Diamonds on WhatsApp"
+                  title="WhatsApp (+971 50 109 3943)"
                 >
                   <WhatsAppLogo size={18} />
                   <span>WhatsApp</span>
@@ -185,7 +193,7 @@ export const Contact: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-full bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] text-white hover:opacity-95 active:scale-95 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-xs font-semibold uppercase tracking-wider group cursor-pointer"
-                  aria-label="Follow Juwelier Simons on Instagram"
+                  aria-label="Follow RichieGold&Diamonds on Instagram"
                   title="Instagram"
                 >
                   <InstagramLogo size={18} />
@@ -198,7 +206,7 @@ export const Contact: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-full bg-[#1877F2] text-white hover:bg-[#166fe5] active:scale-95 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-xs font-semibold uppercase tracking-wider group cursor-pointer"
-                  aria-label="Visit Juwelier Simons on Facebook"
+                  aria-label="Visit RichieGold&Diamonds on Facebook"
                   title="Facebook"
                 >
                   <FacebookLogo size={18} />
@@ -234,7 +242,7 @@ export const Contact: React.FC = () => {
                     Thank You, We Have Received Your Message
                   </h4>
                   <p className="text-xs sm:text-sm text-[#4E6155] max-w-md mx-auto font-light leading-relaxed">
-                    A representative from <span className="font-medium text-[#0B291F]">Juwelier Simons</span> will review your inquiry and contact you promptly. For urgent assistance, please phone us directly at {BUSINESS_INFO.phone}.
+                    A representative from <span className="font-medium text-[#0B291F]">RichieGold&Diamonds</span> will review your inquiry and contact you promptly. For urgent assistance, please phone us directly at {BUSINESS_INFO.phone}.
                   </p>
                   <button
                     type="button"
@@ -272,7 +280,7 @@ export const Contact: React.FC = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+31 ..."
+                        placeholder="+971 ..."
                         className="w-full px-4 py-2 bg-[#FBFBF7] border border-[#D3DDD6] rounded-xl text-xs sm:text-sm text-[#172B22] focus:outline-none focus:border-[#0B291F] transition-colors"
                       />
                     </div>
